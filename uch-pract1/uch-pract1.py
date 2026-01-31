@@ -14,7 +14,7 @@ def main():
     end = max(i_min, i_max)                                         # Правая граница поиска (сам элемент не будет учтен)
     
     neg_sum = 0                                                     # Объявляем переменную, куда запишем сумму
-    for i in range(start + 1, end):                                 # Прибавляем каждый элемент между start и end
+    for i in range(start, end):                                     # Прибавляем каждый элемент между start и end
         if A[i] < 0:
             neg_sum += A[i]
 
